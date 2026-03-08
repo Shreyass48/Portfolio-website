@@ -1,113 +1,131 @@
-# Neo-Brutalist Portfolio
+# 🚀 Shreyas | Frontend Developer Portfolio
 
-A mobile-first, neo-brutalist portfolio site for a frontend developer. Built with Next.js (App Router), TypeScript, Tailwind CSS, and shadcn-style components.
+A modern developer portfolio built to showcase my work, skills, and professional journey as a frontend developer.
 
-## Features
+This portfolio highlights my projects, technical expertise, and experience in building fast, scalable, and user-friendly web applications using modern web technologies.
 
-- **Mobile-first** layout with responsive breakpoints (md, lg)
-- **Neo-brutalist** design: bold typography, thick borders, high contrast
-- **Pages**: Home, Reach Out (contact form), Blogs (coming soon)
-- **Contact form** with Zod validation, inline errors, loading and success states
-- **Accessible**: semantic HTML, ARIA labels, keyboard navigation, focus styles
-- **Performance**: optimized fonts via `next/font`, minimal animations
+---
 
-## Tech Stack
+## 🌐 Live Demo
 
-- [Next.js 15](https://nextjs.org/) (App Router)
-- [TypeScript](https://www.typescriptlang.org/)
-- [Tailwind CSS](https://tailwindcss.com/)
-- [shadcn-style UI](https://ui.shadcn.com/) (Button, Input, Label, Textarea)
-- [React Hook Form](https://react-hook-form.com/) + [Zod](https://zod.dev/) + [@hookform/resolvers](https://github.com/react-hook-form/resolvers)
-- [Framer Motion](https://www.framer.com/motion/) (optional subtle animations)
+🔗 https://your-portfolio-link.com
 
-## Setup
+---
 
-### Prerequisites
+## 👨‍💻 About Me
 
-- Node.js 18+
-- npm (or pnpm/yarn)
+I'm **Shreyas**, a frontend developer focused on building fast, scalable, and user-friendly web applications using modern technologies like **React, Next.js, and Tailwind CSS**.
 
-### Install and run
+I enjoy turning complex ideas into simple, intuitive interfaces and continuously learning new technologies. I also explore **AI-powered tools and workflows** to improve developer productivity and build smarter applications.
 
-```bash
-# Install dependencies
+Currently working as a **Frontend Developer with 2.5+ years of experience**.
+
+---
+
+## ⚡ Tech Stack
+
+**Frameworks & Libraries**
+
+- Next.js
+- React
+- JavaScript / TypeScript
+
+**Styling**
+
+- Tailwind CSS
+- shadcn/ui
+- Responsive Design
+
+**Tools & Platforms**
+
+- Git & GitHub
+- VS Code
+- Figma
+- Vercel
+
+**Other Skills**
+
+- Progressive Web Apps (PWA)
+- Performance Optimization
+- Component-Based Architecture
+
+---
+
+## 📂 Features
+
+- Modern **developer-focused UI**
+- **Responsive design** for all devices
+- **Neo-brutalist themed components**
+- **Project showcase section**
+- **Journey timeline** (education & experience)
+- **Contact form with SMTP integration**
+- Optimized for **performance and SEO**
+
+---
+
+## 📁 Project Structure
+
+```
+portfolio
+│
+├── components
+├── app
+├── public
+├── styles
+├── lib
+└── README.md
+```
+
+---
+
+## 🛠 Installation & Setup
+
+Clone the repository
+
+```
+git clone https://github.com/yourusername/portfolio.git
+```
+
+Navigate to the project
+
+```
+cd portfolio
+```
+
+Install dependencies
+
+```
 npm install
+```
 
-# Run development server (with Turbopack)
+Run the development server
+
+```
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
-
-### Build for production
-
-```bash
-npm run build
-npm start
-```
-
-### Lint
-
-```bash
-npm run lint
-```
-
-## Project structure
+Open in browser:
 
 ```
-src/
-├── app/
-│   ├── layout.tsx      # Root layout, fonts, Header/Footer
-│   ├── page.tsx        # Home (hero, projects, skills)
-│   ├── reach-out/
-│   │   └── page.tsx    # Contact form + social links
-│   ├── blogs/
-│   │   └── page.tsx    # Coming soon + email subscribe
-│   └── globals.css
-├── components/
-│   ├── ui/             # Button, Input, Label, Textarea
-│   ├── header.tsx      # Nav + mobile menu
-│   ├── footer.tsx
-│   ├── section-wrapper.tsx
-│   ├── brutalist-button.tsx
-│   ├── project-card.tsx
-│   └── form-input.tsx
-└── lib/
-    └── utils.ts        # cn()
+http://localhost:3000
 ```
 
-## Customization
+---
 
-- **Content**: Edit name, intro, projects, and skills in `src/app/page.tsx`. Update social links in `src/app/reach-out/page.tsx`.
-- **Theme**: Colors and fonts are in `tailwind.config.ts` and `src/app/globals.css` (CSS variables).
-- **Contact**: The form currently simulates submit (no backend). Connect to your API or service (e.g. Formspree, Resend) in `src/app/reach-out/page.tsx` inside `onSubmit`.
+## 📬 Contact
 
-## Deploy
+If you'd like to collaborate, discuss opportunities, or just connect:
 
-### Vercel (recommended)
+📧 Email: [your-email@example.com](mailto:your-email@example.com)
+💼 LinkedIn: https://linkedin.com/in/yourprofile
+🐙 GitHub: https://github.com/yourusername
 
-1. Push the repo to GitHub.
-2. In [Vercel](https://vercel.com), import the project.
-3. Use default build settings (build: `npm run build`, output: Next.js).
-4. Deploy.
+---
 
-### Other platforms
+## ⭐ Show Your Support
 
-- **Netlify**: Use Next.js runtime; build command `npm run build`, publish directory `.next` (or use Next.js plugin).
-- **Docker**: Use the official Next.js Docker example; set `NODE_ENV=production` and run `npm run build && npm start`.
+If you like this project, consider **starring the repository**. It helps and motivates me to build more!
 
-## Design tokens
+---
 
-| Token    | Value    |
-|----------|----------|
-| Background | `#0B0B0B` |
-| Foreground | `#EAEAEA` |
-| Accent   | `#00FF88` |
-| Muted    | `#BDBDBD` |
-| Border   | `#FFFFFF` |
-
-Fonts: Space Grotesk / Sora (headings), Inter (body), JetBrains Mono (labels).
-
-## License
-
-MIT.
+© 2026 Shreyas. All rights reserved.

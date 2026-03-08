@@ -19,13 +19,18 @@ const contactSchema = z.object({
 type ContactFormData = z.infer<typeof contactSchema>;
 
 const socialLinks = [
-  { href: "https://linkedin.com", label: "LinkedIn", icon: Linkedin },
-  { href: "https://github.com", label: "GitHub", icon: Github },
-  { href: "mailto:hello@example.com", label: "Email", icon: Mail },
+  {
+    href: "https://www.linkedin.com/in/shreyaskulkarni48",
+    label: "LinkedIn",
+    icon: Linkedin,
+  },
+  { href: "https://github.com/Shreyass48", label: "GitHub", icon: Github },
+  { href: "mailto:sgkulkarni48@gmail.com", label: "Email", icon: Mail },
 ];
 
 export default function ReachOutPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState<string | null>(null);
 
   const {
     register,
@@ -38,9 +43,35 @@ export default function ReachOutPage() {
   });
 
   async function onSubmit(data: ContactFormData) {
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitted(true);
-    reset();
+    setSubmitError(null);
+
+    try {
+      const response = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(data),
+      });
+
+      if (!response.ok) {
+        const payload = (await response.json().catch(() => null)) as {
+          message?: string;
+        } | null;
+        throw new Error(
+          payload?.message || "Failed to send your message. Please try again.",
+        );
+      }
+
+      setSubmitted(true);
+      reset();
+    } catch (error) {
+      const message =
+        error instanceof Error
+          ? error.message
+          : "Failed to send your message. Please try again.";
+      setSubmitError(message);
+    }
   }
 
   if (submitted) {
@@ -117,6 +148,16 @@ export default function ReachOutPage() {
               Send Message
             </BrutalistButton>
           </div>
+
+          {submitError ? (
+            <p
+              className="font-mono text-sm text-red-400"
+              role="alert"
+              aria-live="polite"
+            >
+              {submitError}
+            </p>
+          ) : null}
         </form>
 
         <div className="mt-16 border-t-2 border-border pt-10">

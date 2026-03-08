@@ -11,37 +11,48 @@ const intro =
 
 const projects = [
   {
-    title: "E-Commerce Platform",
+    title: "Billing System - PWA",
     description:
-      "Full-stack online store with cart, checkout, and admin dashboard. Optimized for performance and SEO.",
-    href: "#",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Stripe"],
+      "Developed a Progressive Web App (PWA) billing system to manage invoices and transactions efficiently. The application provides a fast, responsive user experience and modern UI components, enabling users to access billing data seamlessly across devices.",
+    githubLink: "#",
+    liveLink: "#",
+    tags: [
+      "Next.js",
+      "JavaScript",
+      "Tailwind CSS",
+      "shadcn/ui",
+      "PWA",
+      "Service Worker",
+      "Responsive UI",
+    ],
   },
   {
     title: "Design System",
     description:
       "Reusable component library with dark mode, theming, and full accessibility compliance.",
-    href: "#",
+    githubLink: "#",
     tags: ["React", "Storybook", "CSS Variables"],
   },
   {
     title: "Analytics Dashboard",
     description:
       "Real-time metrics and charts for product teams. Responsive and data-dense UI.",
-    href: "#",
+    githubLink: "#",
+    liveLink: "#",
     tags: ["Next.js", "Recharts", "PostgreSQL"],
   },
 ];
 
 const skills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
   "React",
   "Next.js",
   "TypeScript",
   "Tailwind CSS",
-  "Node.js",
   "Git",
-  "Figma",
-  "Accessibility",
+  ,
 ];
 
 export default function HomePage() {
@@ -83,7 +94,7 @@ export default function HomePage() {
           A few projects I&apos;ve built recently.
         </p>
         <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {projects.map((project, i) => (
+          {projects.map((project) => (
             <ProjectCard key={project.title} {...project} />
           ))}
         </div>

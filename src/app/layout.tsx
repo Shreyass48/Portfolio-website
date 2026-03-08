@@ -29,9 +29,14 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Portfolio | Frontend Developer",
+  title: "Portfolio | Shreyas Kulkarni",
   description:
     "Frontend developer portfolio — modern web apps with React, Next.js, TypeScript.",
+  icons: {
+    icon: [{ url: "/icon.svg", type: "image/svg+xml", sizes: "any" }],
+    shortcut: [{ url: "/icon.svg", type: "image/svg+xml" }],
+  },
+  manifest: "/site.webmanifest",
 };
 
 export const viewport: Viewport = {
