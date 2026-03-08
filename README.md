@@ -83,7 +83,7 @@ portfolio
 Clone the repository
 
 ```
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/Shreyass48/Portfolio-website.git
 ```
 
 Navigate to the project
@@ -116,9 +116,9 @@ http://localhost:3000
 
 If you'd like to collaborate, discuss opportunities, or just connect:
 
-📧 Email: [your-email@example.com](mailto:your-email@example.com)
-💼 LinkedIn: https://linkedin.com/in/yourprofile
-🐙 GitHub: https://github.com/yourusername
+📧 Email: [sgkulkarni48@gmail.com](mailto:sgkulkarni48@gmail.com)
+💼 LinkedIn: https://www.linkedin.com/in/shreyaskulkarni48
+🐙 GitHub: https://github.com/Shreyass48
 
 ---
 
