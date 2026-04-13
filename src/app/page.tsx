@@ -11,6 +11,43 @@ const intro =
 
 const projects = [
   {
+    title: "Jarvis - Smart Daily AI Assistant",
+    description:
+      "A ChatGPT-like AI assistant with real-time streaming, smart conversations, and live web search — built for fast, intelligent, and seamless user interactions. Designed with a scalable architecture and modern UI for a smooth, responsive experience across devices.",
+    githubLink: "https://github.com/Shreyass48/GenAI/tree/final-model",
+
+    tags: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "GROQ API",
+      "Llama model",
+      "Tavily API",
+    ],
+  },
+  {
+    title: "PolicyPilot - Employee Policy AI Assistant",
+    description:
+      "A RAG-based AI assistant that allows employees to query internal policy documents using natural language. Built with vector search and LLM inference to deliver fast, accurate, and context-aware answers from PDFs.",
+    githubLink: "https://github.com/Shreyass48/GenAI/tree/rag-implementation",
+
+    tags: [
+      "RAG",
+      "LangChain",
+      "OpenAI Embeddings",
+      "Pinecone",
+      "Groq",
+      "Llama 3",
+      "Node.js",
+      "Bun",
+      "Vector Database",
+      "AI Assistant",
+    ],
+  },
+  {
     title: "Billing System - PWA",
     description:
       "Developed a Progressive Web App (PWA) billing system to manage invoices and transactions efficiently. The application provides a fast, responsive user experience and modern UI components, enabling users to access billing data seamlessly across devices.",
@@ -26,33 +63,20 @@ const projects = [
       "Responsive UI",
     ],
   },
-  {
-    title: "Design System",
-    description:
-      "Reusable component library with dark mode, theming, and full accessibility compliance.",
-    githubLink: "#",
-    tags: ["React", "Storybook", "CSS Variables"],
-  },
-  {
-    title: "Analytics Dashboard",
-    description:
-      "Real-time metrics and charts for product teams. Responsive and data-dense UI.",
-    githubLink: "#",
-    liveLink: "#",
-    tags: ["Next.js", "Recharts", "PostgreSQL"],
-  },
 ];
 
 const skills = [
   "HTML",
   "CSS",
   "JavaScript",
+  "TypeScript",
   "React",
   "Next.js",
-  "TypeScript",
   "Tailwind CSS",
   "Git",
-  ,
+  "AI Integration",
+  "LLMs",
+  "Prompt Engineering",
 ];
 
 export default function HomePage() {
@@ -103,7 +127,7 @@ export default function HomePage() {
       {/* Skills Strip */}
       <SectionWrapper className="border-t-2 border-border">
         <h2 className="font-heading text-2xl font-bold text-foreground sm:text-3xl">
-          Skills
+          Core Skills
         </h2>
         <div className="mt-6 flex flex-wrap gap-3" role="list">
           {skills.map((skill) => (

@@ -10,8 +10,7 @@ const timelineItems = [
   {
     year: "2023-Present",
     title: "Frontend Developer",
-    subtitle:
-      "Started professional frontend journey building scalable web applications.",
+    subtitle: "Livlong 365",
     type: "experience" as const,
   },
   {
@@ -34,20 +33,37 @@ const techStackGroups = [
     skills: [
       "React",
       "Next.js",
-      "JavaScript",
       "TypeScript",
+      "JavaScript",
       "HTML5",
       "CSS3",
       "Tailwind CSS",
     ],
   },
+
   {
-    label: "Tools",
-    skills: ["Git", "GitHub", "VS Code", "Chrome DevTools", "Postman"],
+    label: "AI & ML",
+    skills: [
+      "LLMs",
+      "Prompt Engineering",
+      "RAG (Retrieval-Augmented Generation)",
+      "LangChain",
+      "OpenAI API",
+      "Groq API",
+      "Vector Databases (Pinecone)",
+    ],
   },
   {
-    label: "AI Tools",
-    skills: ["Cursor", "GitHub Copilot", "ChatGPT"],
+    label: "Tools & Platforms",
+    skills: [
+      "Git",
+      "GitHub",
+      "Postman",
+      "VS Code",
+      "Chrome DevTools",
+      "Antigravity",
+      "Claude Code",
+    ],
   },
 ];
 
