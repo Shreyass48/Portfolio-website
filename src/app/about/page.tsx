@@ -33,37 +33,20 @@ const techStackGroups = [
     skills: [
       "React",
       "Next.js",
-      "TypeScript",
       "JavaScript",
+      "TypeScript",
       "HTML5",
       "CSS3",
       "Tailwind CSS",
     ],
   },
-
   {
-    label: "AI & ML",
-    skills: [
-      "LLMs",
-      "Prompt Engineering",
-      "RAG (Retrieval-Augmented Generation)",
-      "LangChain",
-      "OpenAI API",
-      "Groq API",
-      "Vector Databases (Pinecone)",
-    ],
+    label: "Tools",
+    skills: ["Git", "GitHub", "VS Code", "Chrome DevTools", "Postman"],
   },
   {
-    label: "Tools & Platforms",
-    skills: [
-      "Git",
-      "GitHub",
-      "Postman",
-      "VS Code",
-      "Chrome DevTools",
-      "Antigravity",
-      "Claude Code",
-    ],
+    label: "AI Tools",
+    skills: ["Cursor", "GitHub Copilot", "ChatGPT", "AntiGravity"],
   },
 ];
 

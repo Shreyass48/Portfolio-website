@@ -75,8 +75,6 @@ const skills = [
   "Tailwind CSS",
   "Git",
   "AI Integration",
-  "LLMs",
-  "Prompt Engineering",
 ];
 
 export default function HomePage() {
